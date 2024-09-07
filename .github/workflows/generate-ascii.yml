@@ -33,7 +33,7 @@ jobs:
 
     deploy_job_3:
         needs: [test_job_2, build_job_1]
-        runs-on: ubuntu-lateast
+        runs-on: self-hosted
         steps:
         - name: Download Dragon text file
           uses: actions/download-artifact@v4
